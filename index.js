@@ -6,6 +6,6 @@ app.get('/', (req, res) => res.sendFile(__dirname+'/frontend/html/home.html'))
 
 app.get('/login', (req, res) => res.send('login'))
 app.get('/register', (req, res) => res.send('register'))
-var student={"name":"being zero","college":"vnrvjiet","registerno":"12345"}
+var student={"name":"aishwarya","college":"vnrvjiet","registerno":"12345"}
 app.get('/data',(req,res)=>res.json(student))
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
